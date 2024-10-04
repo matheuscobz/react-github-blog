@@ -1,12 +1,10 @@
-import { getApiGitHub } from '../api/Github'
-import banner from '../assets/banner.svg'
+
+import logo from '../assets/logo.svg'
 
 export function Header() {
-  getApiGitHub()
-  
   return (
-    <header className="">
-      <img src={banner} alt="" className="w-full z-0"/>
+    <header className="flex justify-center bg-gradient-to-b from-[#1c2c3b] to-[#0B1B2B]">
+      <img src={logo} alt="" className='pb-11 pt-16'/>
     </header>
   )
 }
